@@ -421,5 +421,9 @@ def test_icon():
     return render_template('icon.html')
 
 
+@app.route('/webbuilder')
+def wb_builder():
+    return render_template('web_builder.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
